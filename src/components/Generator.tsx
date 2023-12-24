@@ -249,7 +249,7 @@ export default () => {
         when={!loading()}
         fallback={() => (
           <div class="gen-cb-wrapper">
-            <span>AI is thinking...</span>
+            <span>正在生成回应内容...</span>
             <div class="gen-cb-stop" onClick={stopStreamFetch}>Stop</div>
           </div>
         )}
@@ -261,7 +261,7 @@ export default () => {
           <textarea
             ref={inputRef!}
             onKeyDown={handleKeydown}
-            placeholder="Enter something..."
+            placeholder="输入您想说的..."
             autocomplete="off"
             autofocus
             onInput={() => {
